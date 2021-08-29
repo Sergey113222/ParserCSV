@@ -12,7 +12,7 @@ import javax.servlet.http.HttpServletResponse;
 
 @RestController
 @RequiredArgsConstructor
-public class Controller {
+public class StatisticController {
 
     private final ParserService parserService;
 
@@ -26,7 +26,7 @@ public class Controller {
         parserService.getTopSortedStatistic(requestDto);
     }
 
-    @GetMapping(value = "/exportCSV", produces = "text/csv")
+    @GetMapping(value = "/export/csv", produces = "text/csv")
     public void downloadCsv(HttpServletResponse response) {
         parserService.writeCsv(response);
     }

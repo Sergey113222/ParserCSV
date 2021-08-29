@@ -27,8 +27,6 @@ public class ParserServiceImpl implements ParserService {
     private final Selector selector;
     private final ParserRepository parserRepository;
 
-    private Integer count;
-
     @Override
     public void getAllStatistic(RequestDto requestDto) {
         parserRepository.deleteAll();
@@ -71,7 +69,7 @@ public class ParserServiceImpl implements ParserService {
     }
 
     public Integer matcher(String documentBody, String wordNeeded) {
-        count = 0;
+        int count = 0;
         Pattern pattern = Pattern.compile(wordNeeded);
         Matcher matcher = pattern.matcher(documentBody);
         while (matcher.find()) {
