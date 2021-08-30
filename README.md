@@ -9,4 +9,6 @@ Expected reports are the same:
 -	All stat report – serializes data into CSV file without sort
 -	Top 10 page report – serializes data into CSV file sorted by total hits
 
+Goodle Drive Link video https://drive.google.com/drive/folders/1P6GpnHgpSu1S-9EgI18YCtmfXjJk_wE_?usp=sharing
+
  
